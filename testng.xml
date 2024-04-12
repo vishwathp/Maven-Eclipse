@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="base.Baseclass"></listener>
+	</listeners>
+	
+  <test thread-count="5" name="Test">
+	  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+	        <class name="base.About"/>
+	        <class name="base.VerifyProdTitle"/>
+	        <class name="base.FilterViaAlphabets"/>
+	        <class name="base.FilterViaPrice"/>
+	        <class name="base.Addcart"/>
+	        <class name="base.ViewcartItem"/>
+	        <class name="base.RemovefromCart"/>
+	        <class name="base.RemoveFromHome"/>
+	   		<class name="base.AddMulProd"/>
+	   		<class name="base.PriceDiff"/>  
+	   		<class name="base.SingleOrder"/>
+	   		<class name="base.Orders"/>
+	   		<class name="base.InformationPage"/>
+	   		<class name="base.ProdOverview"/>
+	   		<class name="base.BackHmBtn"/>
+	   		<class name="base.SpecificProdPage"/>
+	   		<class name="base.EmptycartProdDet"/>
+	   		<class name="base.OrderWOProd"/>
+	   		<class name="base.ProdDetPage"/>
+	   		<class name="base.PrdDetRemove"/>
+	   		<class name="base.ChckoutPageError"/>
+       		<class name="base.CancelButton"/> 
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
